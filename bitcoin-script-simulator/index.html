@@ -865,7 +865,8 @@
                     if (stack.length > 0) {
                         const item = stack.pop();
                         let hash;
-                        if (item.includes('redeem script')) {
+                        // 更健壮的判断：只要item以'Redeem script:'开头或长度大于50（一般为redeem script），都视为redeem script
+                        if (item.startsWith('Redeem script') || (item.length > 50 && item.includes('5221'))) {
                             hash = 'ScriptHash: 483c8413b41d1079d527cba5fd5be52b4e4305ef';
                         } else if (item.includes('public key')) {
                             // 对于P2PKH，模拟对公钥进行Hash160
@@ -899,6 +900,7 @@
                             isEqual = hashA === hashB;
                         }
                         logMessage = `Verify equality: ${isEqual ? '✅ Equal' : '❌ Not equal'}`;
+                        // 恢复标准行为：相等时压入TRUE，不等时压入FALSE
                         if (instruction.op === 'OP_EQUAL') {
                             stack.push(isEqual ? 'TRUE' : 'FALSE');
                         }
@@ -922,6 +924,8 @@
                     
                 case 'VERIFY_WITNESS_PROGRAM':
                     logMessage = `Execute Witness program verification: ✅ Successful`;
+                    // 清空栈，只留下验证结果
+                    stack = [];
                     stack.push('✅ SegWit verification successful');
                     break;
 
@@ -933,6 +937,8 @@
                     
                 case 'VERIFY_SCHNORR_SIG':
                     logMessage = `Schnorr signature verification: ✅ Successful`;
+                    // 清空栈，只留下验证结果
+                    stack = [];
                     stack.push('✅ Taproot verification successful');
                     break;
 
@@ -943,15 +949,39 @@
                     break;
                     
                 case 'VERIFY_MULTISIG_2_OF_2':
-                    // 移除已使用的元素
-                    if (stack.length >= 3) {
-                        stack.pop(); // 移除redeem script
-                        stack.pop(); // 移除Bob signature
-                        stack.pop(); // 移除Alice signature
-                        stack.pop(); // 移除OP_0
+                    // 假设栈结构：公钥2, 公钥1, OP_2, Bob签名, Alice签名, OP_0（自顶向下）
+                    // 依次弹出：公钥2、公钥1、OP_2、Bob签名、Alice签名、OP_0
+                    if (stack.length >= 7) {
+                        stack.pop(); // 公钥2
+                        stack.pop(); // 公钥1
+                        stack.pop(); // OP_2
+                        stack.pop(); // Bob签名
+                        stack.pop(); // Alice签名
+                        stack.pop(); // OP_0
+                        stack.pop(); // 再pop一次，确保多余的OP_0被消除
+                    } else if (stack.length >= 6) {
+                        stack.pop(); // 公钥2
+                        stack.pop(); // 公钥1
+                        stack.pop(); // OP_2
+                        stack.pop(); // Bob签名
+                        stack.pop(); // Alice签名
+                        stack.pop(); // OP_0
                     }
                     stack.push('✅ 2-of-2 multisignature verification successful');
                     logMessage = `Execute 2-of-2 multisignature verification: ✅ Successful`;
+                    break;
+                    
+                case 'OP_VERIFY':
+                    if (stack.length > 0) {
+                        const top = stack.pop();
+                        if (top === 'TRUE') {
+                            logMessage = 'OP_VERIFY: TRUE, pop and continue';
+                        } else {
+                            logMessage = 'OP_VERIFY: Not TRUE, script failed';
+                            stack.push(top); // 保持原状
+                            // 可以在这里触发失败提示
+                        }
+                    }
                     break;
                     
                 default:
