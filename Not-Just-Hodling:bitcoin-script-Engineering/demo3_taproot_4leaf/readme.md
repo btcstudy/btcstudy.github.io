@@ -32,7 +32,8 @@ Key features:
 
   **Stack Execution Example (Script Path Spend):**
 
-![stack-diagram](../stack_execution_diagram.png)
+<img width="396" alt="image" src="https://github.com/user-attachments/assets/1658c753-f71a-4398-8bbc-5aa7917cf98b" />
+
 
 ## 🔗 Related Articles
 
