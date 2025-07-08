@@ -9,10 +9,10 @@ This project demonstrates the **first complete implementation of a 4-leaf Taproo
 
 We construct a Taproot address with **4 script leaves**, each representing a different spending condition:
 
-1. `OP_SHA256` + `OP_EQUAL` hashlock
+1. `OP_SHA256` + `OP_EQUAL` hashlock  
 2. 2-of-2 multisig (`Alice & Bob`)  
-3. CSV + `OP_CHECKSIG` for Bob
-4. `OP_CHECKSIG` for bob  
+3. `OP_CSV` + `OP_CHECKSIG` for Bob (relative time lock)  
+4. Simple `OP_CHECKSIG` for Bob 
 
 Key features:
 
@@ -25,12 +25,10 @@ Key features:
 ## 📸 Sample Visuals
 
 **Merkle Tree Layout:**
-           Root Hash
-               /         \
-         Branch0         Branch1
-        /      \        /       \
-  Script0   Script1  Script2  Script3
-  (Hash)    (Multi)   (CSV)    (Sig)
+           
+<img width="292" alt="image" src="https://github.com/user-attachments/assets/ef7ec797-eb12-4782-834a-dea051acd8a2" />
+
+
 
   **Stack Execution Example (Script Path Spend):**
 
