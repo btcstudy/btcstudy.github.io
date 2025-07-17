@@ -26,12 +26,26 @@ _In a past life, I pitched LPs. Now I write Codes._
 
 ---
 
-## ✍️ Blog & Writing Series
+## ✍️ Blog & Writing Series  
+**Not Just HODLing — Real Bitcoin Script Engineering**  
+Deep technical dives into Bitcoin's scripting layer, including Taproot, P2SH, Control Blocks, and testnet-verified examples.
 
-- **Not Just HODLing — Real Bitcoin Script Engineering**  
-  Deep technical dives into Bitcoin's scripting layer:  
-  - [A Guide to Creating Taproot Scripts with Python Bitcoinutils](https://medium.com/@aaron.recompile/a-guide-to-creating-taproot-scripts-with-python-bitcoinutils-e088633bc2a7)  
-  - [How I Built a Time-Locked Bitcoin Script with CSV and P2SH](https://medium.com/@aaron.recompile/how-i-built-a-time-locked-bitcoin-script-with-csv-and-p2sh-c48c0389709d)
+### 🔨 Script Construction & Testnet Transactions
+
+- 🟢 [Building a 4-Leaf Taproot Tree in Python (Testnet-Verified)](https://medium.com/@aaron.recompile/building-a-4-leaf-taproot-tree-in-python-the-first-complete-implementation-on-bitcoin-testnet-c8b66c331f29)
+- 🧩 [Taproot Control Block Deep Analysis + Stack Execution Visualization](https://medium.com/@aaron.recompile/taproot-control-block-deep-analysis-stack-execution-visualization-5ff10f98032c)
+- 🧪 [A Guide to Creating Taproot Scripts with Python Bitcoinutils](https://medium.com/@aaron.recompile/a-guide-to-creating-taproot-scripts-with-python-bitcoinutils-e088633bc2a7)
+- ⏳ [How I Built a Time-Locked Bitcoin Script with CSV and P2SH](https://medium.com/@aaron.recompile/how-i-built-a-time-locked-bitcoin-script-with-csv-and-p2sh-c48c0389709d)
+
+### 🔬 Script Semantics & Misconceptions
+
+- ❗️[Bitcoin Script Doesn’t Execute What’s On the Stack: A Developer’s Journey](https://medium.com/@aaron.recompile/bitcoin-script-doesnt-execute-what-s-on-the-stack-a-developer-s-journey-from-misconception-to-5fd4229a0864)
+
+### 🧱 Foundations
+
+- 🧠 [How Bitcoin P2SH Scripts Work — From 2-of-3 Multisig to Time-Locked Inheritance](https://medium.com/@aaron.recompile/how-bitcoin-p2sh-scripts-work-from-2-of-3-multisig-to-timelocked-inheritance-8015010dd6f2)
+
+> 📘 All articles are testnet-validated, reproducible, and part of the upcoming *Mastering Taproot* book project.
 
 ---
 
