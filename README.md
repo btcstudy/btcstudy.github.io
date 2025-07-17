@@ -9,7 +9,7 @@ _In a past life, I pitched LPs. Now I write Codes._
 
 ## 🛠️ Current Projects
 
-- **[Bitcoin Script Engineering — Book draft](https://aaronzhang.gitbook.io/bitcoincoding)**  
+- **[Bitcoin Script Engineering — Book draft](https://leanpub.com/mastering-taproot)**  
   A full-spectrum guide to raw Bitcoin scripts: from P2PKH to Taproot.
 
 - **[BTC Dev Tools — Under Construction](#)**  
