@@ -1,67 +1,52 @@
-# I spent over a decade in finance...  
-**Now, I build Bitcoin infrastructure from scratch.**
+# 🛠️ Current Projects
 
-_In a past life, I pitched LPs. Now I write Codes._
+• **BTC Dev Tools**  
+  Tools for protocol-native Bitcoin developers:
+  
+  ○ [**StackFlow**](https://btcstudy.github.io/bitcoin-script-simulator/) — Visual step-by-step interpreter for Bitcoin scripts.
+  
+  ○ [**RootScope**](https://btcstudy.github.io/RootScope/) — Merkle Path & Control Block Visualizer for Taproot.
+  
+  ○ [**btcaaron**](https://github.com/aaron-recompile/btcaaron) — A simple Bitcoin Testnet toolkit for developers, with full support for Legacy, SegWit, and Taproot.
 
-> “I’ve chosen my path. This is my control block.”
+# 📚 Educational Content
 
----
+• [**Mastering Taproot**](https://leanpub.com/mastering-taproot) — The first comprehensive guide to Taproot script engineering.
 
-## 🛠️ Current Projects
-
-- **[Bitcoin Script Engineering — Book draft](https://leanpub.com/mastering-taproot)**  
-  A full-spectrum guide to raw Bitcoin scripts: from P2PKH to Taproot.
-
-- **[BTC Dev Tools — Under Construction](#)**  
-  Tools for protocol-native Bitcoin developers, including:  
-  - [Bitcoin Script Execution Simulator](https://btcstudy.github.io/bitcoin-script-simulator/)  
-    Visual step-by-step interpreter for Bitcoin scripts (P2PKH, Taproot, etc.)
-
----
-
-## 📚 Educational Content
-
-- **[比特币脚本编程入门课程（中文）](https://learnblockchain.cn/course/76)**  
+• [比特币脚本编程入门课程（中文）](https://learnblockchain.cn/course/76)  
   以开发者视角讲解比特币脚本语言，适合具备基础编程能力者。
 
----
+# ✍️ Blog & Writing Series
 
-## ✍️ Blog & Writing Series  
-**Not Just HODLing — Real Bitcoin Script Engineering**  
-Deep technical dives into Bitcoin's scripting layer, including Taproot, P2SH, Control Blocks, and testnet-verified examples.
+• **Not Just HODLing — Real Bitcoin Script Engineering**  
+  Deep technical dives into Bitcoin's scripting layer:
+  
+  ○ [A Guide to Creating Taproot Scripts with Python Bitcoinutils](https://medium.com/@aaron.recompile/a-guide-to-creating-taproot-scripts-with-python-bitcoinutils-e088633bc2a7)
+  
+  ○ [How I Built a Time-Locked Bitcoin Script with CSV and P2SH](https://medium.com/@aaron.recompile/how-i-built-a-time-locked-bitcoin-script-with-csv-and-p2sh-c48c0389709d)
+  
+  ○ [Building a 4-Leaf Taproot Tree in Python — First Complete Implementation on Bitcoin Testnet](https://medium.com/@aaron.recompile/building-a-4-leaf-taproot-tree-in-python-the-first-complete-implementation-on-bitcoin-testnet-c8b66c331f29)
 
-### 🔨 Script Construction & Testnet Transactions
+# 🎙️ Podcast
 
-- 🟢 [Building a 4-Leaf Taproot Tree in Python (Testnet-Verified)](https://medium.com/@aaron.recompile/building-a-4-leaf-taproot-tree-in-python-the-first-complete-implementation-on-bitcoin-testnet-c8b66c331f29)
-- 🧩 [Taproot Control Block Deep Analysis + Stack Execution Visualization](https://medium.com/@aaron.recompile/taproot-control-block-deep-analysis-stack-execution-visualization-5ff10f98032c)
-- 🧪 [A Guide to Creating Taproot Scripts with Python Bitcoinutils](https://medium.com/@aaron.recompile/a-guide-to-creating-taproot-scripts-with-python-bitcoinutils-e088633bc2a7)
-- ⏳ [How I Built a Time-Locked Bitcoin Script with CSV and P2SH](https://medium.com/@aaron.recompile/how-i-built-a-time-locked-bitcoin-script-with-csv-and-p2sh-c48c0389709d)
+• **From Funds to Functions** — *under construction*  
+  A podcast exploring Bitcoin fundamentals & tech from an investor's lens.
 
-### 🔬 Script Semantics & Misconceptions
+# 🧠 Long-Term Vision
 
-- ❗️[Bitcoin Script Doesn’t Execute What’s On the Stack: A Developer’s Journey](https://medium.com/@aaron.recompile/bitcoin-script-doesnt-execute-what-s-on-the-stack-a-developer-s-journey-from-misconception-to-5fd4229a0864)
-
-### 🧱 Foundations
-
-- 🧠 [How Bitcoin P2SH Scripts Work — From 2-of-3 Multisig to Time-Locked Inheritance](https://medium.com/@aaron.recompile/how-bitcoin-p2sh-scripts-work-from-2-of-3-multisig-to-timelocked-inheritance-8015010dd6f2)
-
-> 📘 All articles are testnet-validated, reproducible, and part of the upcoming *Mastering Taproot* book project.
-
----
-
-## 🎙️ Podcast
-
-- **From Funds to Functions** — _under construction_  
-  A podcast exploring Bitcoin fundamentals & tech from an investor’s lens.
+• Practice **sovereignty**, build **open tools**
+• Collaborate with **AI agents** to engineer **protocol-native systems**  
+• Bootstrap **trustless infra** for global founders and investors
 
 ---
 
-## 🧠 Long-Term Vision
+## 👤 About the Author
 
-- Practice **sovereignty**, build **open tools**
-- Collaborate with **AI agents** to engineer **protocol-native systems**
-- Bootstrap **trustless infra** for global founders and investors
+**I spent over a decade in finance...**  
+Now, I build Bitcoin infrastructure from scratch.
 
----
+*In a past life, I pitched LPs. Now I write Codes.*
 
-📫 [x.com/zzmjxy](https://x.com/zzmjxy) | [GitHub](https://github.com/aaronzhang) | [Medium](https://medium.com/@aaron.recompile)
+> "Not just investing in Bitcoin. I'm building it."
+
+📫 Connect Aaron Zhang: [x.com/zzmjxy](https://x.com/zzmjxy)
