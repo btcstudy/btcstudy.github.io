@@ -1,7 +1,6 @@
 # 🛠️ Current Projects
 
-• **BTC Dev Tools**  
-  Tools for protocol-native Bitcoin developers:
+**BTC Dev Tools**  Tools for protocol-native Bitcoin developers:
   
   ○ [**StackFlow**](https://btcstudy.github.io/bitcoin-script-simulator/) — Visual step-by-step interpreter for Bitcoin scripts.
   
